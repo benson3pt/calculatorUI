@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="app-bg">
+        <a>
+        </a>
+        <div class="app-container">
+            <div class="navbar">
+                <div class="back-btn cursor">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="var(--fg)" />
+              </svg>
+                </div>
+                <div class="grid-spacer"></div>
+                <div class="menu-btn cursor">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="var(--fg)" />
+              </svg>
+                </div>
+            </div>
+
+            <h1 class="title">貸款計算UI</h1>
+            <p class="sub-t">計算您每月還款金額
+
+
+            </p>
+
+            <div class="input-container">
+                <h3>貸款額度</h3>
+                <p id="loanDisplay">$500,000</p>
+                <input class='cursor' type="range" name="loanAmount" id="loanAmount" min="0" max="1000000" value="500000" />
+                <div class="display-container">
+                    <span class="left-display">$0</span>
+                    <span class="right-display">$1,000,000</span>
+                </div>
+                <h3>還款期
+                </h3>
+                <p id="loanPeriodDisplay">36</p>
+                <input class='cursor' type="range" name="loanPeriod" id="loanPeriod" min="3" max="72" value="37" />
+                <div class="display-container">
+                    <span class="left-display">3 個月</span>
+                    <span class="right-display">72 個月</span>
+                </div>
+                <h3>利率
+                </h3>
+                <div class="button-container">
+                    <button class="fixed cursor">單一利率</button>
+                    <button class="fixed cursor">分段利率</button>
+                </div>
+            </div>
+            <p class="alert">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="var(--fg)" />
+            </svg> 每月還款金額試算 輸入您貸款的本金、年限、寬限期及利率，我們可為您計算每月房貸還款金額。
+
+
+            </p>
+            <button class="calculate cursor">計算</button>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
